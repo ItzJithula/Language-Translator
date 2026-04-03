@@ -404,7 +404,7 @@
                 <span>Back</span>
             </a>
             <button class="nav-btn" id="themeBtn">
-                <i class="fa-solid fa-gear"></i>
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
             </button>
         </div>
     </nav>
@@ -506,20 +506,28 @@
 
         // Theme Toggle
         const themeBtn = document.getElementById('themeBtn');
+        const themeIcon = document.getElementById('themeIcon');
         const body = document.body;
         
+        function updateTheme(theme) {
+            if (theme === 'light') {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            } else {
+                body.removeAttribute('data-theme');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            }
+        }
+
         if (localStorage.getItem('theme') === 'light') {
-            body.setAttribute('data-theme', 'light');
+            updateTheme('light');
         }
 
         themeBtn.addEventListener('click', () => {
-            if (body.getAttribute('data-theme') === 'light') {
-                body.removeAttribute('data-theme');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                body.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light');
-            }
+            const isLight = body.getAttribute('data-theme') === 'light';
+            const newTheme = isLight ? 'dark' : 'light';
+            updateTheme(newTheme);
+            localStorage.setItem('theme', newTheme);
         });
 
         // Input Handling
