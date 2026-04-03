@@ -18,23 +18,6 @@ A sleek, single-file language translator web app with a glassmorphism UI, dark/l
  
 ---
  
-## 🚀 Getting Started
- 
-### Option 1 — Just open it
- 
-Download `index.html` and open it in any modern browser. That's it.
- 
-### Option 2 — Clone the repo
- 
-```bash
-git clone https://github.com/your-username/language-translator.git
-cd language-translator
-```
- 
-Then open `index.html` in your browser — no server required.
- 
----
- 
 ## 🛠️ Built With
  
 | Technology | Purpose |
@@ -110,29 +93,9 @@ No API key is required for basic usage. The free tier allows up to **5,000 chara
  
 ---
  
-## 🤝 Contributing
- 
-Contributions, issues, and feature requests are welcome!
- 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
- 
----
- 
 ## 📄 License
  
 This project is open source and available under the [MIT License](LICENSE).
- 
----
- 
-## 👨‍💻 Author
- 
-**Jithula Bhasitha**
-- Website: [Bit X Tools](https://bit-x-tools.vercel.app)
-- GitHub: [@your-username](https://github.com/your-username)
  
 ---
  
